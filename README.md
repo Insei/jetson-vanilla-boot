@@ -2,7 +2,7 @@
 
 In L4T version 23.5, all Jetson Nano versions have the ability to move boot flow partitions to qspi. We use this to run any possible EFI-enabled Linux distributions intact. For jetson nano, we build the dtb and u-boot kernel from source and flash it to qspi.
 
-### Supprted
+### Supported
 * Jetson nano developer's kit with 4GB of ram.
 
 ### Dependencies
