@@ -31,7 +31,8 @@ We can set u-boot and kernel dtb versions.
 ./make-kernel-dtbs 5.4.51
 ```
 
-#### Switch jetson nano to recovery mode:
+#### Switch jetson to recovery mode:
+For example jetson nano 4GB: 
 1) Connect FC REC pin with GND pin.
 2) Connect Jetson nano micro usb to PC usb port. (Pay attention to the power supply on the USB port of the computer)
 3) Enter lsusb command: we can see 
