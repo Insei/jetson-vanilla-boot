@@ -17,15 +17,29 @@ In L4T version 23.5, all Jetson-nano versions have the ability to move boot flow
 
 ### How to:
 
-We can set u-boot and kernel dtb versions.
+#### Download Nvidia BSP
+
 ```sh
 ./get-bsp 210
+./get-bsp 186
+```
+
+#### Switch to vanilla
+We can set u-boot and kernel dtb versions.
+```sh
 ./make-u-boot v2021.01
 ./make-kernel-dtbs 5.4.51
 ```
 
-Go to bsp by platform Linux_for_Tegra folder and flash jetson:
-
+#### Switch jetson nano to recovery mode:
+1) Connect FC REC pin with GND pin.
+2) Connect Jetson nano micro usb to PC usb port.
+3) Enter lsusb command: we can see 
+```sh
+Bus 001 Device 005: ID 0955:7f21 NVIDIA Corp. APX
+```
+#### Flash Jetson:
+jetson nano example.
 ```sh
 cd BSP/t210/Linux_for_Tegra/
 sudo ./flash.sh jetson-nano-qspi mmcblk0p1
