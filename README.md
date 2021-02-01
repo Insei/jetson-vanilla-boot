@@ -35,7 +35,7 @@ We can set u-boot and kernel dtb versions.
 For example jetson nano 4GB: 
 1) Connect FC REC pin with GND pin.
 2) Connect Jetson nano micro usb to PC usb port. (Pay attention to the power supply on the USB port of the computer)
-3) Enter lsusb command: we can see 
+3) Enter lsusb command on PC, we can see 
 ```sh
 Bus 001 Device 005: ID 0955:7f21 NVIDIA Corp. APX
 ```
