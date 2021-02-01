@@ -8,11 +8,12 @@ In L4T version 23.5, all Jetson Nano versions have the ability to move boot flow
 ### Dependencies
 
 * make
-* bc 
-* curl 
-* bison 
-* flex 
-* python3-dev 
+* bc
+* curl
+* bison
+* flex
+* python3
+* python3-dev
 * swig
 
 ### How to:
