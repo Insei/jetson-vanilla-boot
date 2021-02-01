@@ -1,18 +1,19 @@
 # jetson-vanilla-boot
 
-In L4T version 23.5, all Jetson Nano versions have the ability to move boot flow partitions to qspi. We use this to run any possible EFI-enabled Linux distributions intact. For jetson nano, we build the dtb and u-boot kernel from source and flash it to qspi.
+In L4T version 23.5, all Jetson Nano versions have the ability to move boot flow partitions to qspi. We use this to run any possible EFI-enabled Linux distributions intact. For jetson nano, we build the kernel dtb and u-boot from source and flash it to qspi.
 
-### Supprted
+### Supported
 * Jetson nano developer's kit with 4GB of ram.
 
 ### Dependencies
 
 * make
-* bc 
-* curl 
-* bison 
-* flex 
-* python3-dev 
+* bc
+* curl
+* bison
+* flex
+* python3
+* python3-dev
 * swig
 
 ### How to:
@@ -35,7 +36,7 @@ We can set u-boot and kernel dtb versions.
 For example jetson nano 4GB: 
 1) Connect FC REC pin with GND pin.
 2) Connect Jetson nano micro usb to PC usb port. (Pay attention to the power supply on the USB port of the computer)
-3) Enter lsusb command: we can see 
+3) Enter lsusb command on PC, we can see 
 ```sh
 Bus 001 Device 005: ID 0955:7f21 NVIDIA Corp. APX
 ```
